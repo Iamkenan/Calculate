@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="look.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="row screen">
+          <p></p>
+        </div>
+        <div class="row buttons">
+          <div class="row seventonine">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>&divide;</button>
+          </div>
+          <div class="row fourtosix">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>&times;</button>
+          </div>
+          <div class="row onetothree">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>&plus;</button>
+          </div>
+          <div class="row zeroplus">
+            <button>0</button>
+            <button>&#46;</button>
+            <button>&#61;</button>
+            <button>&minus;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('button').click(function(event) {
+          value = $(this).text();
+          $('p').append(value);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 *{
   font-style: italic;
   color: white;
+  margin: auto;
 }
 
 html{
@@ -14,20 +15,20 @@ html{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
-  font-size: 2em;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
 }
 
 .calculator{
-  width: 400px;
-  height:600px;
+  width: 300px;
+  height:500px;
   border:solid black;
   border-radius: 10px;
+  box-shadow: 2px 2px 10px grey;
 }
-
 
 .screen{
   background-color: black;
@@ -35,27 +36,39 @@ html{
   border-radius: 8px 8px 0 0;
 }
 
-
+.do{
+  background: 	#D3D3D3;
+  opacity:.3
+}
 
 .buttons{
   height: 70%;
   //border: solid yellow;
-  background-image: linear-gradient(red, orange);
-  border-radius: 0 0 8px 8px;
-  padding-top: 1px;
+  background-image: linear-gradient(to top right, #4C4556, #872642);
+  border-radius: 0 0 7.5px 7.5px;
+  //padding-top: 1px;
+  background-color:
 }
 
 button{
+  -webkit-appearance: none;
   width: 25%;
-  height: 25%;
+  height: 87.5px;
   padding: 10%;
-  margin-top: 5px;
+  //margin-top: px;
   float: left;
   background-color: transparent;
-  border: none;
+  border:none;
+
 }
 
-button:focus{
-  border: none;
-  outline: none;
+p{
+  max-width:300px;
+  //border: solid yellow;
+
+}
+
+
+#minus{
+  border-radius: 0 0 8px 0;
 }

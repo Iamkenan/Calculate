@@ -1,14 +1,19 @@
+
 *{
   font-style: italic;
   color: white;
   margin: auto;
 }
-
 html{
   height: 100%;
+}
+
+body{
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: radial-gradient(circle, #220000 30%, black 96%);
 }
 
 .screen{
@@ -37,14 +42,13 @@ html{
 }
 
 .do{
-  background: 	#D3D3D3;
-  opacity:.3
+  background-color: rgba(211,211,211,.2);
 }
 
 .buttons{
   height: 70%;
   //border: solid yellow;
-  background-image: linear-gradient(to top right, #4C4556, #872642);
+  background-image: linear-gradient(to top right, #220000, #a24545);
   border-radius: 0 0 7.5px 7.5px;
   //padding-top: 1px;
   background-color:
@@ -59,7 +63,10 @@ button{
   float: left;
   background-color: transparent;
   border:none;
+}
 
+button:focus{
+  outline: none;
 }
 
 p{
@@ -68,7 +75,13 @@ p{
 
 }
 
-
 #minus{
   border-radius: 0 0 8px 0;
+}
+
+.tapped{
+  transform: scale(1.1);
+  border: 2px solid white;
+  box-shadow:0 0 8px white;
+  transition: all .04s;
 }
